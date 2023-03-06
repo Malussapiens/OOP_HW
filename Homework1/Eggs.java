@@ -1,5 +1,5 @@
 package Homework1;
 
 public class Eggs {
-    private int amount = 0;
+    private int amount;
 }
