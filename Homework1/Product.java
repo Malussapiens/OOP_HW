@@ -12,4 +12,12 @@ public class Product {
         this.unit = unit;
         this.quantity = quantity;
     }
+    
+    public String toString() {
+        String pName = "name: " + name;
+        String pPrice = "price: " + price;
+        String pQuantity = "quantity: " + quantity;
+        String pUnit = "unit: " + unit;
+        return pName + '\n' + pPrice + '\n' + pUnit + '\n' + pQuantity + '\n';
+    }
 }

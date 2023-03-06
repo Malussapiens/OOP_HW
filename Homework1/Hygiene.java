@@ -7,4 +7,8 @@ public class Hygiene extends Product {
         super(name, unit, price, quantity);
         this.amount = amount;
     }
+
+    public String toString() {
+        return super.toString() + "amount: " + '\n';
+    }
 }

@@ -8,4 +8,8 @@ public class Eggs extends Food {
         super(name, unit, price, quantity, bestBefore);
         this.amount = amount;
     }
+
+    public String toString(){
+        return super.toString() + "amount: " + amount + '\n';
+    }
 }

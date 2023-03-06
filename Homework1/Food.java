@@ -7,4 +7,8 @@ public class Food extends Product {
         super(name, unit, price, quantity);
         this.bestBefore = bestBefore;
     }
+
+    public String toString(){
+        return super.toString() + "best_before: " + bestBefore + '\n';
+    }
 }
