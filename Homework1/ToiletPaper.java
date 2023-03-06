@@ -7,4 +7,8 @@ public class ToiletPaper extends Hygiene{
         super(name, unit, price, quantity, amount);
         this.numOfLayers = numOfLayers;
     }
+
+    public String toString(){
+        return super.toString() + "num_of_layers: " + numOfLayers + '\n';
+    }
 }
