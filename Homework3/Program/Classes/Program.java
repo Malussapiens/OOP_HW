@@ -1,10 +1,10 @@
-package Sem2;
+package Homework3.Program.Classes;
 
 import Sem2.Figures.*;
 
 import Sem2.Figures.Base.*;
 
-public class Sem {
+public class Program {
     public static void main(String[] args) {
         Figure[] figures = {new Triangle(), new Rectangle(), new Circle(), new Square()};
         for(Figure figure : figures)

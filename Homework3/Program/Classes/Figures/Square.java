@@ -1,4 +1,4 @@
-package Sem2.Figures;
+package Homework3.Program.Classes.Figures;
 
 public class Square extends Rectangle{
     public Square(int length){

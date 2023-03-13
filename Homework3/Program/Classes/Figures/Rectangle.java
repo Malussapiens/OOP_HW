@@ -1,4 +1,4 @@
-package Sem2.Figures;
+package Homework3.Program.Classes.Figures;
 
 import Sem2.Figures.Base.Polygon;
 

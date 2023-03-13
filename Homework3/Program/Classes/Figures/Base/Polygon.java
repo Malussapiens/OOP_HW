@@ -1,4 +1,4 @@
-package Sem2.Figures.Base;
+package Homework3.Program.Classes.Figures.Base;
 
 public abstract class  Polygon  implements Figure, Perimeterable {
     protected int[] sides;

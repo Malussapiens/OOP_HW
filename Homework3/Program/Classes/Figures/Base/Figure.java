@@ -1,4 +1,4 @@
-package Sem2.Figures.Base;
+package Homework3.Program.Classes.Figures.Base;
 
 public interface Figure {
      double area();
