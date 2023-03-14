@@ -1,6 +1,6 @@
 package Homework3.Program.Classes.Figures;
 
-import Sem2.Figures.Base.Polygon;
+import Homework3.Program.Classes.Figures.Base.Polygon;
 
 public class Triangle extends Polygon{
     public Triangle(int a, int b, int c){

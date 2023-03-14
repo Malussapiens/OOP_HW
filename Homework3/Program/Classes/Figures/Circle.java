@@ -1,7 +1,7 @@
 package Homework3.Program.Classes.Figures;
 
-import Sem2.Figures.Base.Figure;
-import Sem2.Figures.Base.Lengthable;
+import Homework3.Program.Classes.Figures.Base.Figure;
+import Homework3.Program.Classes.Figures.Base.Lengthable;
 
 public class Circle implements Figure, Lengthable{
     private int radius;
