@@ -4,6 +4,7 @@ import Homework2.Program.Classes.Animals.Base.PetAnimal;
 import java.util.Map;
 import java.util.HashMap;
 
+
 public class Cat extends PetAnimal {
 
     private Boolean hasFur;

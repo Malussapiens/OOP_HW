@@ -7,8 +7,6 @@ import Homework2.Program.Classes.Animals.Stork;
 import Homework2.Program.Classes.Animals.Tiger;
 import Homework2.Program.Classes.Animals.Wolf;
 import Homework2.Program.Classes.Animals.Base.Animal;
-import Homework2.Program.Classes.Animals.Base.PetAnimal;
-import Homework2.Program.Classes.Animals.Base.WildAnimal;
 
 import java.util.HashMap;
 import java.util.Scanner;

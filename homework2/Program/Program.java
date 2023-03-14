@@ -1,14 +1,14 @@
 package Homework2.Program;
 
 import java.util.Map;
-import java.util.TreeMap;
 import java.util.Scanner;
+import java.util.TreeMap;
+
 import Homework2.Program.Classes.AnimalCreator;
 import Homework2.Program.Classes.Zoo;
 
 public class Program {
     public static void main(String[] args) {
-
         // Главное меню
         TreeMap<Integer, String> mainMenu = new TreeMap<>();
         mainMenu.putAll(Map.of(
