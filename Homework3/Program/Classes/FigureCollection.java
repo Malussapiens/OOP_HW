@@ -3,6 +3,7 @@ package Homework3.Program.Classes;
 import java.util.ArrayList;
 import java.util.List;
 
+import Homework3.Program.Classes.Figures.FigureComparator;
 import Homework3.Program.Classes.Figures.Base.Figure;
 import Homework3.Program.Classes.Figures.Base.Lengthable;
 import Homework3.Program.Classes.Figures.Base.Perimeterable;
@@ -61,7 +62,7 @@ public class FigureCollection<T extends Figure> {
     public String getAllFiguresInfo() {
         StringBuilder sb = new StringBuilder();
         for (Figure figure : col) {
-            sb.append(String.format("%s(%d):\n", figure, counter));
+            sb.append(String.format("%s(%d):\n", figure, col.indexOf(figure)));
             sb.append(String.format("площадь: %f\n", getArea(figure)));
             if (figure instanceof Perimeterable) {
                 sb.append(String.format("периметр: %f\n", getPerimeter(figure)));
@@ -75,12 +76,15 @@ public class FigureCollection<T extends Figure> {
 
     // 3. удаления фигуры,
     public void remove(int index) {
-        System.out.println("Удаляем фигуру по индексу " + index);
+        col.remove(index);
     }
 
     // 4. изменения фигуры по индексу,
-    public void replace(Figure figure, int index) {
-        System.out.println("Заменяем фигуру по индексу " + index);
+    public void replace(int index, Figure figure) {
+        col.set(index, figure);
     }
     // 5. сортировки по площади, вывод информации о всех фигурах.
+    public void sortByArea(){
+        col.sort(new FigureComparator());
+    }
 }
