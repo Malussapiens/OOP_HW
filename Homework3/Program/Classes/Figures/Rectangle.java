@@ -6,13 +6,6 @@ public class Rectangle extends Polygon {
 
     public Rectangle(int a, int b) {
         super(new int[] { a, b, a, b });
-        try {
-            if (a == 0 || b == 0) {
-                throw new Exception("Длина сторон прямоугольника должна быть больше 0");
-            }
-        } catch (Exception e) {
-            e.getMessage();
-        }
     }
 
     public Rectangle() {
