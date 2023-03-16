@@ -46,13 +46,6 @@ public class Program {
         System.out.println("Удаляем элемент(1):");
         fc.remove(1);
         System.out.println(fc.getAllFiguresInfo());
-
-        // пробуем создать круг с нулевым радиусом
-        fc.add(new Circle(0)); // выходим с ошибкой
-
-        Rectangle rect = new Rectangle(0, 4);
-
-        System.out.println(fc.getAllFiguresInfo());
     }
 
     // выполнено в рамках семинара
