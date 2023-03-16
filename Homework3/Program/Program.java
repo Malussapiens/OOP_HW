@@ -16,21 +16,42 @@ public class Program {
         // Square() };
         // for (Figure figure : figures)
         // printFigureInfo(figure);
-        
+
         // демонстрация ДЗ
         FigureCollection<Figure> fc = new FigureCollection<>();
-        
+
         fc.add(new Triangle());
         fc.add(new Circle());
         fc.add(new Square());
-        
+
         System.out.println("Периметры:");
         System.out.println(fc.calcAllPerimeters());
-        
+
         System.out.println("Площади:");
         System.out.println(fc.calcAllAreas());
-        
+
         System.out.println("Вся информация:");
+        System.out.println(fc.getAllFiguresInfo());
+
+        System.out.println("Сортировка по площади:");
+        fc.sortByArea();
+        System.out.println(fc.getAllFiguresInfo());
+
+        // замена элемента с индексом 1 на прямоугольник
+        System.out.println("Заменяем элемент(1) на прямоугольник");
+        fc.replace(1, new Rectangle());
+        System.out.println(fc.getAllFiguresInfo());
+
+        // удаление элемента с индексом 1
+        System.out.println("Удаляем элемент(1):");
+        fc.remove(1);
+        System.out.println(fc.getAllFiguresInfo());
+
+        // пробуем создать круг с нулевым радиусом
+        fc.add(new Circle(0)); // выходим с ошибкой
+
+        Rectangle rect = new Rectangle(0, 4);
+
         System.out.println(fc.getAllFiguresInfo());
     }
 
