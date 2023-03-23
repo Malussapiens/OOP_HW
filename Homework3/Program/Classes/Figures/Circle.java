@@ -28,4 +28,9 @@ public class Circle implements Figure, Lengthable {
     public String toString() {
         return String.format("Круг");
     }
+
+    @Override
+    public int compareTo(Figure figure) {
+        return (int)(this.area()-figure.area());
+    }
 }

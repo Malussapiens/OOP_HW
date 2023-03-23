@@ -13,4 +13,10 @@ public abstract class Polygon implements Figure, Perimeterable {
             sum += side;
         return sum;
     }
+
+    @Override
+    public int compareTo(Figure figure) {
+        return (int)(this.area()-figure.area());
+    }
+    
 }

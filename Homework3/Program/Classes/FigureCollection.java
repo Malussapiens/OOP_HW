@@ -1,6 +1,7 @@
 package Homework3.Program.Classes;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import Homework3.Program.Classes.Figures.FigureComparator;
@@ -85,6 +86,7 @@ public class FigureCollection<T extends Figure> {
     }
     // 5. сортировки по площади, вывод информации о всех фигурах.
     public void sortByArea(){
-        col.sort(new FigureComparator());
+        // col.sort(new FigureComparator());
+        Collections.sort(col);
     }
 }

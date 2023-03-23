@@ -21,4 +21,7 @@ public class Rectangle extends Polygon {
     public String toString() {
         return String.format("Прямоугольник");
     }
+
+    
 }
+
