@@ -16,7 +16,17 @@ public abstract class Polygon implements Figure, Perimeterable {
 
     @Override
     public int compareTo(Figure figure) {
-        return (int)(this.area()-figure.area());
+        return (int) (this.area() - figure.area());
     }
-    
+
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (o == null)
+            return false;
+        if (!(o instanceof Polygon))
+            return false;
+        return true;
+    }
+
 }

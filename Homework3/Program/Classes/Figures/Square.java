@@ -12,4 +12,14 @@ public class Square extends Rectangle{
     public String toString(){
         return "Квадрат";
     }
+
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (o == null)
+            return false;
+        if (!(o instanceof Square))
+            return false;
+        return true;
+    }
 }

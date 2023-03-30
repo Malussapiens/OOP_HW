@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import Homework3.Program.Classes.Figures.FigureComparator;
 import Homework3.Program.Classes.Figures.Base.Figure;
 import Homework3.Program.Classes.Figures.Base.Lengthable;
 import Homework3.Program.Classes.Figures.Base.Perimeterable;
@@ -12,6 +11,8 @@ import Homework3.Program.Classes.Figures.Base.Perimeterable;
 public class FigureCollection<T extends Figure> {
     private List<Figure> col;
     private int counter;
+
+    List list = new ArrayList<>();
 
     public FigureCollection() {
         col = new ArrayList<>();

@@ -22,6 +22,14 @@ public class Rectangle extends Polygon {
         return String.format("Прямоугольник");
     }
 
-    
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (o == null)
+            return false;
+        if (!(o instanceof Rectangle))
+            return false;
+        return true;
+    }
 }
 

@@ -23,4 +23,14 @@ public class Triangle extends Polygon {
     public String toString() {
         return "Треугольник";
     }
+
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (o == null)
+            return false;
+        if (!(o instanceof Triangle))
+            return false;
+        return true;
+    }
 }
