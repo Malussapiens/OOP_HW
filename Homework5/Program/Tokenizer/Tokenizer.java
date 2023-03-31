@@ -1,4 +1,4 @@
-package Homework5.Program;
+package Homework5.Program.Tokenizer;
 
 import java.util.Arrays;
 import java.util.Collections;

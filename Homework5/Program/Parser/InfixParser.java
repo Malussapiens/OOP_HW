@@ -1,30 +1,23 @@
-package Homework5.Program;
+package Homework5.Program.Parser;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
 public class InfixParser {
-    static Stack<String> rpn_out;
+    static Stack<String> rpn_out;  // output stack
+    // operations priority
     static Map<String, Integer> opsPriority = new HashMap<>(Map.of(
             "(", 0, "-", 1, "+", 1, "/", 2, "*", 2, "^", 3));
 
-    private static boolean isNumber(String token) {
-        try {
-            Double.parseDouble(token);
-            return true;
-        } catch (NumberFormatException e) {
-            return false;
-        }
-    }
-
     public static Stack<String> parse(Stack<String> tokens) {
         rpn_out = new Stack<>();
-        Stack<String> operStack = new Stack<>();
+        Stack<String> operStack = new Stack<>(); // operations tokens stack
         while (!tokens.empty()) {
             String token = tokens.pop();
             switch (token) {
-                // if open brace token, push to operation stack
+                // if open brace token, push it to operation stack
                 case "(":
                     operStack.push(token);
                     break;
@@ -39,7 +32,7 @@ public class InfixParser {
                     operStack.pop();
                     break;
                 default:
-                    // if operation, push all higher or equal priority ops from operation stack
+                    // if operation token, push all higher or equal priority ops from operation stack
                     // to output stack
                     if (opsPriority.containsKey(token)) {
                         while (operStack.size() > 0
@@ -59,6 +52,7 @@ public class InfixParser {
         while (!operStack.empty()) {
             rpn_out.push(operStack.pop());
         }
+        Collections.reverse(rpn_out);
         return rpn_out;
     }
 
