@@ -1,34 +1,13 @@
-model
-Calculator
-    sum(a, b)
-        return a+b;
-    sub(a, b)
-    div(a, b)
-    mul(a, b)
+Model:
+class Calc (contains a math methods which returns a result of math operations)
+class Tokenizer (splits expression string to tokens (numbers, operators, braces, etc.))
+class InfixParser (convert infix tokens set(stack) to postfix notation (RPN) set (stack))
 
-presenter
-Interpreter
-    String input;
-    double a, b;
+View:
+class UserInteraction (gets user input and prints messages)
+class Menu
 
-    view.getInputString();
-    view.printResult();
-
-    Calculator.sub(a, b)
-
-Parser(inputString){
-    (2+(4-3))*6
-    if("-"){
-        sub(a, b);
-    }
-
-}
-
-view
-getInputString(){
-    return String
-}
-
-print(String msg){};
+Controller:
+class RPNParser (reads RPN set and calls Calc functions to calculate expression)
 
 

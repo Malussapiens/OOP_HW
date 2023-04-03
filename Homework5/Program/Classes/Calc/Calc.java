@@ -1,4 +1,4 @@
-package Homework5.Program.Calc;
+package Homework5.Program.Classes.Calc;
 
 public class Calc {
     public static float sum(float a, float b) {

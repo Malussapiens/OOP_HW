@@ -1,8 +1,8 @@
-package Homework5.Program.Parser;
+package Homework5.Program.Classes.Parser;
 
 import java.util.Stack;
 
-import Homework5.Program.Calc.Calc;
+import Homework5.Program.Classes.Calc.Calc;
 
 public class RPNParser {
     private static Stack<Float> stack = new Stack<>();

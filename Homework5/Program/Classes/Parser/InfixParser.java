@@ -1,4 +1,4 @@
-package Homework5.Program.Parser;
+package Homework5.Program.Classes.Parser;
 
 import java.util.Collections;
 import java.util.HashMap;
