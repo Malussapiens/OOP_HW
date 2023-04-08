@@ -20,6 +20,8 @@ def tokenize(expression: str) -> queue:
             token = ''
         elif str.isdigit(char) or char == '.':
             token += char
-    tokens.append(token)
+    
+    if token != '':
+        tokens.append(token)
     return tokens
 
