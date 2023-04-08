@@ -29,7 +29,6 @@ public class Tokenizer {
                             if (tokens.empty()) {
                                 token.append(chr);
                             } else if (tokens.peek().length() == 1) {
-                                opTokens.contains(tokens.peek().charAt(0));
                                 token.append(chr);
                             }
                             break;
