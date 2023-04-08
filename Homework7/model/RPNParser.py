@@ -1,5 +1,3 @@
-import Tokenizer
-import InfixParser
 import Ops as op
 
 from collections import deque
@@ -28,11 +26,4 @@ def parse(rpn:deque):
         print("stack", stack)
     return stack.pop()
 
-exp_str =  '15/(7-(1+1))*3-(2+(1+1))*15/(7-(200+1))*3-(2+(1+1))*(15/(7-(1+1))*3-(2+(1+1))+15/(7-(1+1))*3-(2+(1+1)))'
-# exp_str = "(1+(4-(2*2)))/2"
-tokens = Tokenizer.tokenize(exp_str)
-print('tokens', tokens)
-rpn = InfixParser.parse(tokens)
-print('rpn', rpn)
-print("parsing")
-print("res", parse(rpn))
+
