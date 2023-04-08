@@ -8,8 +8,6 @@ stack = deque()
 def parse(rpn:deque):
     while len(rpn)>0:
         token = rpn.popleft()
-        print("token", token)
-        print("rpn", rpn)
         if token in ops:
             b = float(stack.pop())
             a = float(stack.pop())
@@ -23,7 +21,6 @@ def parse(rpn:deque):
                 stack.append(op.div(a, b))
         else:
             stack.append(token)
-        print("stack", stack)
     return stack.pop()
 
 
