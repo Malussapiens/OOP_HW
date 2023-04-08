@@ -8,7 +8,6 @@ def tokenize(expression: str) -> queue:
 
     for char in expression:
         if char in ops:
-            print(char, token)
             if len(token) > 0:
                 tokens.append(token)
                 token = ''
@@ -23,6 +22,4 @@ def tokenize(expression: str) -> queue:
             token += char
     tokens.append(token)
     return tokens
-
-
 
